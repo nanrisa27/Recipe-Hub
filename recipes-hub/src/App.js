@@ -1,15 +1,26 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Footer from "./Components/Footer/Footer";
 
 
 
-function App() {
-  return (
-    <div className="App">
-      
-       
+class App extends Component {
+  render(){
+    return (
+      <div className="App">
+        <header className= "recipe-header">
+
+          <h1 className="title">Recipe Hub</h1>
+        </header>
+
+        <Footer/>
         
-    </div>
-  );
+         
+          
+      </div>
+    );
+
+  }
+  
 }
 
 export default App;
