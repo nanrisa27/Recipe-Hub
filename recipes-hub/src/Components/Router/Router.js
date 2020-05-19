@@ -14,7 +14,7 @@ const Router = ()=>{
         <Switch>
         
           <Route path="/" component={App} exact/>
-          <Route path="/meal/:id" component={Ingridients}/>
+          <Route path="/meal/:idMeal" component={Ingridients}/>
         </Switch>
         </BrowserRouter>
         
