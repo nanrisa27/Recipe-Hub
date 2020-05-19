@@ -1,11 +1,15 @@
 import React from 'react'
 
-const Form = ()=>{
-    <form>
-        <input type="text"/>
+const Form = (props)=>{
+    return(
+        <form onSubmit= {props.getRecipe} style={{marginBottom:"2rem"}}>
+        <input className="form__input" type="text" name="recipeName"/>
 
-        <button onClick ="submit">Search Recipe</button>
+        <button className="form__button">Search Recipe</button>
     </form>
+
+    );
+   
 }
 
 
