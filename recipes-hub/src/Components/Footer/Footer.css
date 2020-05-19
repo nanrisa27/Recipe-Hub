@@ -1,0 +1,26 @@
+.connect-list {
+	padding: 0;
+}
+
+.connect-list__item {
+	display: inline-block;
+	margin-right: 1rem;
+}
+
+.connect-list__link {
+	color:white;
+
+	
+}
+
+.page__header {
+	background: rgb(76, 209, 187);
+	color:white;
+	padding: 1em;
+	margin-bottom: 1em;	
+}
+
+.page__footer {
+	@extend .page__header;
+	margin-bottom: 0;
+}

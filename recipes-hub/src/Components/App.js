@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-
-import Form from "./Components/Form/Form";
-import Recipes from "./Components/Recipes/Recipes"
-
-
+import Footer from '../Components/Footer/Footer';
+import Form from '../Components/Form/Form';
+import Recipes from '../Components/Recipes/Recipes'
+import './App.css';
 
 
 
@@ -41,6 +40,7 @@ class App extends Component {
         </header>
         <Form getRecipe= {this.getRecipe}/>
         <Recipes meals={this.state.meals}/>
+        <Footer/>
         
         
 

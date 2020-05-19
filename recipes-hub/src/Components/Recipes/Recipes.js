@@ -1,5 +1,5 @@
 import React from 'react';
-import link from 'react-router-dom';
+import { BrowserRouter, Route, Link } from "react-router-dom";
 
 
 const Recipes= (props)=>{
@@ -22,9 +22,10 @@ const Recipes= (props)=>{
 
                       </div>
                       <button className="recipe_buttons"> 
-                      <link to={{pathname:`/meal/${meal.idMeal}`,
-                      state:{meal:meal.strInstructions}
-                    }}>View Recipe </link></button>
+                      <Link to={{pathname:`/meal/${meal.idMeal}`,
+                      state: {meal:meal.title}
+                      
+                    }}>View Recipe </Link></button>
                   </div>
               </div>
             
