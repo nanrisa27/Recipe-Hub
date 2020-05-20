@@ -1,49 +1,53 @@
 import React from 'react';
-import './Footer.css';
+import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
-class Footer extends React.Component {
+const Footer = () => {
+  return (
+    <MDBFooter color="cyan" className="font-small darken-3 pt-0">
+      <MDBContainer>
+        <MDBRow>
+          <MDBCol md="12" className="py-5">
+            <div className="mb-5 flex-center">
+              <a className="fb-ic" href="https://www.facebook.com/nancy.minyoi/">
+                <i className="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x">
+                </i>
+              </a>
+			  <a 
+                                className="connect-list__link"                          
+                                href="https://github.com/nanrisa27"
+                                target="newwindow"
+                            >
+                                <i className="fab fa-github-alt white-text mr-5 mr-3 fa2x" />
+                            </a>
 
-	render() {
-		return (
-			<footer className="page-footer">
-				<div className="container">
-					<div className="column four">
-					<h2>Connect with me</h2>
-					<ul className="connect-list">
-						<li className="connect-list__item">
-							<a 
-								className="connect-list__link"							
-								href="https://www.linkedin.com/in/nancy-minyoi-mulozi/"
-								target="newwindow"
-							>
-								<i className="zmdi zmdi-linkedin zmdi-hc-5x" />
-							</a>
-						</li>
-						<li className="connect-list__item">
-							<a 
-								className="connect-list__link"							
-								href="https://github.com/nanrisa27"
-								target="newwindow"
-							>
-								<i className="zmdi zmdi-github-alt zmdi-hc-5x" />
-							</a>
-						</li>
-						<li className="connect-list__item">
-							<a 
-								className="connect-list__link"
-								href="https://www.instagram.com/joshfied_0904/?hl=en/"
-								target="newwindow"
-							>
-								<i className="zmdi zmdi-instagram zmdi-hc-5x" />
-							</a>
-						</li>												
-					</ul>
-					</div>
-				</div>
-			</footer>
-		);
-	}
+              <a className="tw-ic">
+                <i className="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x">
+                </i>
+              </a>
+              
+              <a className="li-ic"href="https://www.linkedin.com/in/nancy-minyoi-mulozi/"
+                target="newwindow">
+                <i className="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x">
+                </i>
+              </a>
+              
+              
+            </div>
+          </MDBCol>
+        </MDBRow>
+      </MDBContainer>
+      <div className="footer-copyright text-center py-3">
+        <MDBContainer fluid>
+          &copy; {new Date().getFullYear()} Nancy Mulozi{" "}
+         
+        </MDBContainer>
+      </div>
+    </MDBFooter>
+  );
 }
+
+
 
 
 
