@@ -1,7 +1,7 @@
 # Recipe-Hub
 This demo App was a creation for a school/class exercise for Basic React Course.
 
-##Techs Used
+## Techs Used
 *This project was bootstrapped with Create React App.
 * Use of Hooks, 
 * Made API calls to The MealDB API
